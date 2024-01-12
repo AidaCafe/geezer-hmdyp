@@ -61,7 +61,7 @@ export const ReportForm = (props: ReportFormProps) => {
       >
         <IconParkOutlineSalesReport />
       </button>
-      <div className={`reportPanel${isShow ? "" : "-hide"}`}>
+      <div className={`reportPanel${isShow ? "" : "_hide"}`}>
         <div className="reportPanelData">
           <DateTimeRangePicker start={new Date("2023-12-1")} />
           <ReportTable data={props.data} />

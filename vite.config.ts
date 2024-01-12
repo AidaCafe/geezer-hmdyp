@@ -1,12 +1,10 @@
 import { defineConfig } from "vite";
 import preact from "@preact/preset-vite";
 import monkey, { cdn } from "vite-plugin-monkey";
-import pluginPurgeCss from "@mojojoejo/vite-plugin-purgecss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    pluginPurgeCss(),
     preact(),
     monkey({
       entry: "src/main.tsx",
@@ -14,7 +12,7 @@ export default defineConfig({
         icon: "https://vitejs.dev/logo.svg",
         license: "MIT License",
         author: "1shin",
-        version: "1.0.1",
+        version: "1.1.0",
         description: "Calculate how much did you paid for PerfectWorldGame.",
         contributionURL: "https://github.com/AidaCafe/geezer-hmdyp",
         match: [
@@ -25,8 +23,8 @@ export default defineConfig({
       build: {
         externalGlobals: {
           preact: cdn.npmmirror("preact", "dist/preact.min.js"),
-          writeXlsxFile: cdn.npmmirror(
-            "write-excel-file",
+          "write-excel-file": cdn.npmmirror(
+            "writeXlsxFile",
             "bundle/write-excel-file.min.js"
           ),
         },
