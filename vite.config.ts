@@ -25,6 +25,10 @@ export default defineConfig({
       build: {
         externalGlobals: {
           preact: cdn.npmmirror("preact", "dist/preact.min.js"),
+          "write-excel-file": cdn.npmmirror(
+            "write-excel-file",
+            "bundle/write-excel-file.min.js"
+          ),
         },
       },
     }),
