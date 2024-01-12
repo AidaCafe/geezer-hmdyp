@@ -25,12 +25,14 @@ export const ReportTable = (props: ReportFormProps) => {
     <div className="reportTable">
       <table>
         <thead>
-          <th>时间</th>
-          <th>游戏</th>
-          <th>订单号</th>
-          <th>价格</th>
-          <th>支付方式</th>
-          <th>状态</th>
+          <tr>
+            <th>时间</th>
+            <th>游戏</th>
+            <th>订单号</th>
+            <th>价格</th>
+            <th>支付方式</th>
+            <th>状态</th>
+          </tr>
         </thead>
         <tbody>
           {props.data?.map((charge) => (

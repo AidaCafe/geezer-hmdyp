@@ -16,7 +16,11 @@ export const CalcButton = (props: CalcButtonProps) => {
     }
   }
 
-  return <button {...props}>{childs}</button>;
+  return (
+    <button type={props.type ?? "button"} {...props}>
+      {childs}
+    </button>
+  );
 };
 
 CalcButton.Group = (props: JSX.HTMLAttributes<HTMLDivElement>) => {

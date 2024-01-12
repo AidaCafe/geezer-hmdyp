@@ -3,7 +3,10 @@
   "linter": {
     "rules": {
       "recommended": true,
-      "style": { "useSelfClosingElements": "off" },
+      "style": {
+        "useSelfClosingElements": "off",
+        "noNonNullAssertion": "warn"
+      },
       "a11y": { "noSvgWithoutTitle": "off" }
     }
   }
