@@ -9,12 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "10.16.0"
+    "preact": "10.19.3",
+    "write-excel-file": "^1.4.27"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.5.0",
-    "typescript": "^5.1.6",
-    "vite": "^4.4.8",
-    "vite-plugin-monkey": "^3.4.0"
+    "@mojojoejo/vite-plugin-purgecss": "^1.1.0",
+    "@preact/preset-vite": "^2.8.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3",
+    "vite": "^4.5.1",
+    "vite-plugin-monkey": "^3.5.1"
   }
 }
