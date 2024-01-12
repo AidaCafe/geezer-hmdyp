@@ -24,14 +24,19 @@ export const ReportForm = (props: ReportFormProps) => {
           <ReportTable data={props.data} />
         </div>
         <div className="reportPanelStats">
-          <h1>Hello World</h1>
+          <h1>Title</h1>
           <div className="statsPanel">
             <ul>
               <li>
-                <strong>总计: </strong>114514
+                <strong>总计: </strong>
+                {props.data?.reduce((j, k) => j + k.price, 0)}
               </li>
               <li>
-                <strong>总计: </strong>114514
+                <strong>最贵一笔: </strong>
+                {props.data?.reduce(
+                  (max, item) => (item.price > max ? item.price : max),
+                  0
+                )}
               </li>
             </ul>
           </div>

@@ -75,7 +75,7 @@ export function App() {
         <CalcButton
           title="简单计算"
           onClick={async () => {
-            if (data.length == 0) {
+            if (data.length === 0) {
               setLoadingState(true);
               fetchChargeHist()
                 .then(() => console.log(data))

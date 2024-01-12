@@ -35,12 +35,12 @@
 
 .statsPanel {
   position: absolute;
-  border-radius: 14px;
+  border-radius: 8px;
   background-color: #fefefe;
   box-shadow: 2px 2px 5px #bfbfbf;
   padding: 12px 24px;
-  bottom: 22px;
-  right: 22px;
+  bottom: 16px;
+  right: 16px;
 }
 
 .statsPanel li {
