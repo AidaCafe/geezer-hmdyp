@@ -14,7 +14,7 @@ export default defineConfig({
         icon: "https://vitejs.dev/logo.svg",
         license: "MIT License",
         author: "1shin",
-        version: "1.0.0",
+        version: "1.0.1",
         description: "Calculate how much did you paid for PerfectWorldGame.",
         contributionURL: "https://github.com/AidaCafe/geezer-hmdyp",
         match: [
@@ -25,7 +25,7 @@ export default defineConfig({
       build: {
         externalGlobals: {
           preact: cdn.npmmirror("preact", "dist/preact.min.js"),
-          "write-excel-file": cdn.npmmirror(
+          writeXlsxFile: cdn.npmmirror(
             "write-excel-file",
             "bundle/write-excel-file.min.js"
           ),
