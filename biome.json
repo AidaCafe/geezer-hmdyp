@@ -1,0 +1,10 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.5.1/schema.json",
+  "linter": {
+    "rules": {
+      "recommended": true,
+      "style": { "useSelfClosingElements": "off" },
+      "a11y": { "noSvgWithoutTitle": "off" }
+    }
+  }
+}
