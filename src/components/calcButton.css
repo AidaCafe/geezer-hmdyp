@@ -1,0 +1,31 @@
+.calcBtnGroup {
+  display: inline-flex;
+  max-width: max-content;
+  max-height: max-content;
+  border: 2px solid #ff6960;
+  border-radius: 8px;
+}
+
+.calcBtnGroup button {
+  border: none;
+  padding: 8px;
+  color: #ff6960;
+  background-color: transparent;
+}
+
+.calcBtnGroup button svg {
+  vertical-align: middle;
+}
+
+.calcBtnGroup button:hover {
+  background-color: #ff6960;
+  color: aliceblue;
+}
+
+.calcBtnGroup button:last-child {
+  border-right: none;
+}
+
+.calcBtnGroup button:not(:last-child) {
+  border-right: 2px solid #ff6960;
+}

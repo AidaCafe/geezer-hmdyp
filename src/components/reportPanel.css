@@ -1,0 +1,48 @@
+.reportTriggerBtn {
+  display: relative;
+  border: 2px solid #ff6960;
+  color: #ff6960;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.reportTriggerBtn svg {
+  vertical-align: middle;
+}
+
+.reportPanel {
+  display: flex;
+  position: absolute;
+  border-radius: 12px;
+  background-color: #fefefe;
+  box-shadow: 2px 2px 5px #bfbfbf;
+  padding: 42px 32px;
+  right: 3px;
+  top: 170px;
+  flex-direction: row;
+  max-height: 480px;
+}
+
+.reportPanel-hide {
+  display: none;
+}
+
+.reportPanelStats {
+  margin-left: 20px;
+  min-width: 180px;
+}
+
+.statsPanel {
+  position: absolute;
+  border-radius: 14px;
+  background-color: #fefefe;
+  box-shadow: 2px 2px 5px #bfbfbf;
+  padding: 12px 24px;
+  bottom: 22px;
+  right: 22px;
+}
+
+.statsPanel li {
+  line-height: 1.6;
+}

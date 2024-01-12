@@ -1,12 +1,7 @@
-import { render } from 'preact';
-import { App } from './app';
-import './index.css';
+import { render } from "preact";
+import { App } from "./app";
 
-render(
-  <App />,
-  (() => {
-    const app = document.createElement('div');
-    document.body.append(app);
-    return app;
-  })(),
-);
+const serPayBox = document.querySelector(".serPayBox.f12.cl");
+const calcMain = document.createElement("div");
+serPayBox?.appendChild(calcMain);
+render(<App />, calcMain);

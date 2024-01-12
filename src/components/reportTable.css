@@ -1,0 +1,33 @@
+.reportTable {
+  overflow: scroll;
+  max-height: 320px;
+  max-width: 455px;
+}
+
+.reportTable th,
+.reportTable td {
+  padding: 2px 18px;
+  border-top-width: 0;
+  border-left-width: 0;
+  white-space: nowrap;
+}
+
+.reportTable td {
+  border-bottom: 1px solid #424242;
+}
+
+.reportTable th:nth-last-child(1),
+.reportTable th:nth-last-child(2),
+.reportTable td:nth-last-child(1),
+.reportTable td:nth-last-child(2) {
+  text-align: center;
+  padding: 4px;
+}
+
+.reportTable thead {
+  position: sticky;
+  top: 0;
+  background-color: #fefefea1;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 0.5px 8px #bfbfbf;
+}
