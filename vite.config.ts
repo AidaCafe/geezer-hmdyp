@@ -14,6 +14,7 @@ export default defineConfig({
         icon: "https://vitejs.dev/logo.svg",
         license: "MIT License",
         author: "1shin",
+        version: "1.0.0",
         description: "Calculate how much did you paid for PerfectWorldGame.",
         contributionURL: "https://github.com/AidaCafe/geezer-hmdyp",
         match: [
