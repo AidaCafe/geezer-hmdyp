@@ -7,7 +7,10 @@
         "useSelfClosingElements": "off",
         "noNonNullAssertion": "warn"
       },
-      "a11y": { "noSvgWithoutTitle": "off" }
+      "a11y": { "noSvgWithoutTitle": "off" },
+      "complexity": {
+        "noForEach": "off"
+      }
     }
   }
 }

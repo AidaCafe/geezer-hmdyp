@@ -41,19 +41,10 @@ export function App() {
             Array.from(row.querySelectorAll("td")).map(
               (td) => td.textContent?.trim()!
             );
-
-          console.log(
-            time,
-            game,
-            orderIdStr,
-            priceStr,
-            paymentMethod,
-            statusText
-          );
           const orderId = parseInt(orderIdStr!);
           const price = parseInt(priceStr.slice(1));
-          const status = statusText == "付款成功" ? true : false;
-          data?.push({ time, game, orderId, price, paymentMethod, status });
+          const status = statusText === "付款成功" ? true : false;
+          data.push({ time, game, orderId, price, paymentMethod, status });
           currentPrice += price;
         });
 

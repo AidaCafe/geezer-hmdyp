@@ -46,3 +46,18 @@
 .statsPanel li {
   line-height: 1.6;
 }
+
+.floatingButtons {
+  position: absolute;
+  max-width: max-content;
+  top: 16px;
+  right: 16px;
+}
+
+.floatingButtons button {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fefefe;
+  box-shadow: 2px 2px 5px #bfbfbf;
+}
